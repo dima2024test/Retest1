@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>61.0</apiVersion>
+    <interviewLabel>Test Wait Element {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Test Wait Element</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordCreates>
+        <description>Create element - Test description</description>
+        <name>Create_Opportunity</name>
+        <label>Create Opportunity</label>
+        <locationX>176</locationX>
+        <locationY>134</locationY>
+        <connector>
+            <targetReference>Wait_1_minute</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>CloseDate</field>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Name</field>
+        </inputAssignments>
+        <inputAssignments>
+            <field>StageName</field>
+        </inputAssignments>
+        <object>Opportunity</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Create_Opportunity</targetReference>
+        </connector>
+    </start>
+    <status>Obsolete</status>
+    <variables>
+        <name>testvar</name>
+        <dataType>SObject</dataType>
+        <isCollection>true</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+        <objectType>Opportunity</objectType>
+    </variables>
+    <variables>
+        <name>TestVariable</name>
+        <dataType>String</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <waits>
+        <description>Wait for Amount of Time element - test description</description>
+        <name>Wait_1_minute</name>
+        <elementSubtype>WaitDuration</elementSubtype>
+        <label>Wait 1 minute</label>
+        <locationX>176</locationX>
+        <locationY>242</locationY>
+        <defaultConnectorLabel>Default Path</defaultConnectorLabel>
+        <waitEvents>
+            <conditionLogic>and</conditionLogic>
+            <connector>
+                <targetReference>Weait_Condition</targetReference>
+            </connector>
+            <label>el_0</label>
+        </waitEvents>
+    </waits>
+    <waits>
+        <description>Wait Until Date element  test description</description>
+        <name>Wait_Until_Date_1</name>
+        <elementSubtype>WaitDate</elementSubtype>
+        <label>Wait Until Date 1</label>
+        <locationX>176</locationX>
+        <locationY>542</locationY>
+        <defaultConnectorLabel>Default Path</defaultConnectorLabel>
+        <waitEvents>
+            <conditionLogic>and</conditionLogic>
+            <label>el_1</label>
+        </waitEvents>
+    </waits>
+    <waits>
+        <description>Wait  test description</description>
+        <name>Weait_Condition</name>
+        <label>Wait Condition</label>
+        <locationX>176</locationX>
+        <locationY>350</locationY>
+        <defaultConnector>
+            <targetReference>Wait_Until_Date_1</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Path</defaultConnectorLabel>
+        <waitEvents>
+            <name>WCondition</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Wait_1_minute</leftValueReference>
+                <operator>WasVisited</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Wait_Until_Date_1</targetReference>
+            </connector>
+            <eventType>AIPredictionEvent</eventType>
+            <label>WCondition</label>
+        </waitEvents>
+    </waits>
+</Flow>

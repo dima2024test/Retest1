@@ -1,0 +1,2626 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>Check_If_Users_Are_Connected_to_Slack</name>
+        <label>Check If Users Are Connected to Slack</label>
+        <locationX>182</locationX>
+        <locationY>1600</locationY>
+        <actionName>slackCheckUsersAreConnectedToSlack</actionName>
+        <actionType>slackCheckUsersAreConnectedToSlack</actionType>
+        <connector>
+            <targetReference>h_dccb463114fe65582b42b5d811153813_PostPreLog</targetReference>
+        </connector>
+        <flowTransactionModel>Automatic</flowTransactionModel>
+        <inputParameters>
+            <name>slackAppIdForToken</name>
+            <value>
+                <stringValue>A03269G3DNE</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>slackWorkspaceIdForToken</name>
+            <value>
+                <stringValue>T07CM66NMRQ</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>userIdsToCheck</name>
+            <value>
+                <elementReference>RecipientId2</elementReference>
+            </value>
+        </inputParameters>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </actionCalls>
+    <actionCalls>
+        <description>Source:Account_Type:Technology_Partner,550,798|Target:Increase_the_Count_by_2,1450,1062</description>
+        <name>h_01b8d7b10f85897d48ce09062b16cfcf_PostPreLog</name>
+        <label>Log After: Technology Partner, Before: Increase the Count by 2</label>
+        <locationX>1062</locationX>
+        <locationY>550</locationY>
+        <actionName>TritonFlow</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <targetReference>Increase_the_Count_by_2</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>category</name>
+            <value>
+                <stringValue>Flow</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>type</name>
+            <value>
+                <stringValue>test</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>area</name>
+            <value>
+                <stringValue>teset</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>summary</name>
+            <value>
+                <stringValue>Log After: Technology Partner, Before: Increase the Count by 2</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>details</name>
+            <value>
+                <stringValue>Executed: Log After: Technology Partner, Before: Increase the Count by 2</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>interviewGUID</name>
+            <value>
+                <stringValue>{!$Flow.InterviewGuid}</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>flowApiName</name>
+            <value>
+                <stringValue>testnewmp__Custom_DY_Screen_flow_Loop_Promer-4</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>level</name>
+            <value>
+                <stringValue>FINER</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>stacktrace</name>
+            <value>
+                <stringValue>{!h_7ebb7da63a608c67f3dcd0e93cdcf318_Pharos_Template}</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>fullStacktrace</name>
+            <value>
+                <stringValue>{!Pharos_Full_Stacktrace}</stringValue>
+            </value>
+        </inputParameters>
+        <outputParameters>
+            <assignToReference>Pharos_Full_Stacktrace</assignToReference>
+            <name>fullStacktrace</name>
+        </outputParameters>
+    </actionCalls>
+    <actionCalls>
+        <description>Source:Screen_1,1750,798|Target:Loop_through_Accounts,850,182</description>
+        <name>h_06f6ae9de1eba7221406a3d44f1f91d9_PostPreLog</name>
+        <label>Log After: Screen 1, Before: Loop through Accounts</label>
+        <locationX>182</locationX>
+        <locationY>1300</locationY>
+        <actionName>TritonFlow</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <targetReference>Loop_through_Accounts</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>category</name>
+            <value>
+                <stringValue>Flow</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>type</name>
+            <value>
+                <stringValue>test</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>area</name>
+            <value>
+                <stringValue>teset</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>summary</name>
+            <value>
+                <stringValue>Log After: Screen 1, Before: Loop through Accounts</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>details</name>
+            <value>
+                <stringValue>Executed: Log After: Screen 1, Before: Loop through Accounts</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>interviewGUID</name>
+            <value>
+                <stringValue>{!$Flow.InterviewGuid}</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>flowApiName</name>
+            <value>
+                <stringValue>testnewmp__Custom_DY_Screen_flow_Loop_Promer-4</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>level</name>
+            <value>
+                <stringValue>DEBUG</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>stacktrace</name>
+            <value>
+                <stringValue>{!h_127f53a8375cc01a1c760ff60e9891b3_Pharos_Template}</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>fullStacktrace</name>
+            <value>
+                <stringValue>{!Pharos_Full_Stacktrace}</stringValue>
+            </value>
+        </inputParameters>
+        <outputParameters>
+            <assignToReference>Pharos_Full_Stacktrace</assignToReference>
+            <name>fullStacktrace</name>
+        </outputParameters>
+    </actionCalls>
+    <actionCalls>
+        <description>Source:Account_Type:Prospect,550,798|Target:Increase_the_Count_by_3,1450,798</description>
+        <name>h_1a34eaba7eeafd9b7afc04e40ebf0a11_PostPreLog</name>
+        <label>Log After: Prospect, Before: Increase the Count by 3</label>
+        <locationX>798</locationX>
+        <locationY>550</locationY>
+        <actionName>TritonFlow</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <targetReference>Increase_the_Count_by_3</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>category</name>
+            <value>
+                <stringValue>Flow</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>type</name>
+            <value>
+                <stringValue>test</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>area</name>
+            <value>
+                <stringValue>teset</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>summary</name>
+            <value>
+                <stringValue>Log After: Prospect, Before: Increase the Count by 3</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>details</name>
+            <value>
+                <stringValue>Executed: Log After: Prospect, Before: Increase the Count by 3</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>interviewGUID</name>
+            <value>
+                <stringValue>{!$Flow.InterviewGuid}</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>flowApiName</name>
+            <value>
+                <stringValue>testnewmp__Custom_DY_Screen_flow_Loop_Promer-4</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>level</name>
+            <value>
+                <stringValue>FINER</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>stacktrace</name>
+            <value>
+                <stringValue>{!h_4529eecbb44a94d1c9d1f4184e882bab_Pharos_Template}</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>fullStacktrace</name>
+            <value>
+                <stringValue>{!Pharos_Full_Stacktrace}</stringValue>
+            </value>
+        </inputParameters>
+        <outputParameters>
+            <assignToReference>Pharos_Full_Stacktrace</assignToReference>
+            <name>fullStacktrace</name>
+        </outputParameters>
+    </actionCalls>
+    <actionCalls>
+        <description>Source:Account_Type:Customer_Direct,550,798|Target:Increase_the_Count_by_4,1450,534</description>
+        <name>h_1fa3c8e13bc001f5ace1284f213a6a8a_PostPreLog</name>
+        <label>Log After: Customer - Direct, Before: Increase the Count by 4</label>
+        <locationX>534</locationX>
+        <locationY>550</locationY>
+        <actionName>TritonFlow</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <targetReference>Increase_the_Count_by_4</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>category</name>
+            <value>
+                <stringValue>Flow</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>type</name>
+            <value>
+                <stringValue>test</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>area</name>
+            <value>
+                <stringValue>teset</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>summary</name>
+            <value>
+                <stringValue>Log After: Customer - Direct, Before: Increase the Count by 4</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>details</name>
+            <value>
+                <stringValue>Executed: Log After: Customer - Direct, Before: Increase the Count by 4</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>interviewGUID</name>
+            <value>
+                <stringValue>{!$Flow.InterviewGuid}</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>flowApiName</name>
+            <value>
+                <stringValue>testnewmp__Custom_DY_Screen_flow_Loop_Promer-4</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>level</name>
+            <value>
+                <stringValue>FINER</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>stacktrace</name>
+            <value>
+                <stringValue>{!h_1675f19da70ed65d057a5cf49750970f_Pharos_Template}</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>fullStacktrace</name>
+            <value>
+                <stringValue>{!Pharos_Full_Stacktrace}</stringValue>
+            </value>
+        </inputParameters>
+        <outputParameters>
+            <assignToReference>Pharos_Full_Stacktrace</assignToReference>
+            <name>fullStacktrace</name>
+        </outputParameters>
+    </actionCalls>
+    <actionCalls>
+        <description>Source:Screen_3,2050,182|Target:Add_Recipient,2350,182</description>
+        <name>h_4219ea428a412ff3463ea6722819fbbc_PostPreLog</name>
+        <label>Log After: Screen 3, Before: Add Recipient</label>
+        <locationX>182</locationX>
+        <locationY>1450</locationY>
+        <actionName>TritonFlow</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <targetReference>Add_Recipient</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>category</name>
+            <value>
+                <stringValue>Flow</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>type</name>
+            <value>
+                <stringValue>test</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>area</name>
+            <value>
+                <stringValue>teset</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>summary</name>
+            <value>
+                <stringValue>Log After: Screen 3, Before: Add Recipient</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>details</name>
+            <value>
+                <stringValue>Executed: Log After: Screen 3, Before: Add Recipient</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>interviewGUID</name>
+            <value>
+                <stringValue>{!$Flow.InterviewGuid}</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>flowApiName</name>
+            <value>
+                <stringValue>testnewmp__Custom_DY_Screen_flow_Loop_Promer-4</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>level</name>
+            <value>
+                <stringValue>DEBUG</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>stacktrace</name>
+            <value>
+                <stringValue>{!h_089fc3366074151d14d0d7ef361d1df4_Pharos_Template}</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>fullStacktrace</name>
+            <value>
+                <stringValue>{!Pharos_Full_Stacktrace}</stringValue>
+            </value>
+        </inputParameters>
+        <outputParameters>
+            <assignToReference>Pharos_Full_Stacktrace</assignToReference>
+            <name>fullStacktrace</name>
+        </outputParameters>
+    </actionCalls>
+    <actionCalls>
+        <description>Source:Send_Slack_notification,3250,50|Target:Create_Opp,3550,50</description>
+        <name>h_42e6f4931ba59e62714614aeff240b1b_PostPreLog</name>
+        <label>Log After: Send Slack notification, Before: Create Opp</label>
+        <locationX>50</locationX>
+        <locationY>2050</locationY>
+        <actionName>TritonFlow</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <targetReference>Create_Opp</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>category</name>
+            <value>
+                <stringValue>Flow</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>type</name>
+            <value>
+                <stringValue>test</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>area</name>
+            <value>
+                <stringValue>teset</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>summary</name>
+            <value>
+                <stringValue>Log After: Send Slack notification, Before: Create Opp</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>details</name>
+            <value>
+                <stringValue>Executed: Log After: Send Slack notification, Before: Create Opp</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>interviewGUID</name>
+            <value>
+                <stringValue>{!$Flow.InterviewGuid}</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>flowApiName</name>
+            <value>
+                <stringValue>testnewmp__Custom_DY_Screen_flow_Loop_Promer-4</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>level</name>
+            <value>
+                <stringValue>DEBUG</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>stacktrace</name>
+            <value>
+                <stringValue>{!h_a8b5c2701448a780273ec6d9df5972c8_Pharos_Template}</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>fullStacktrace</name>
+            <value>
+                <stringValue>{!Pharos_Full_Stacktrace}</stringValue>
+            </value>
+        </inputParameters>
+        <outputParameters>
+            <assignToReference>Pharos_Full_Stacktrace</assignToReference>
+            <name>fullStacktrace</name>
+        </outputParameters>
+    </actionCalls>
+    <actionCalls>
+        <description>Source:Add_Recipient,2350,182|Target:Check_If_Users_Are_Connected_to_Slack,2650,182</description>
+        <name>h_46d58bf9faf3721819dcfd40499b2f98_PostPreLog</name>
+        <label>Log After: Add Recipient, Before: Check If Users Are Connected to Slack</label>
+        <locationX>182</locationX>
+        <locationY>1600</locationY>
+        <actionName>TritonFlow</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <targetReference>Check_If_Users_Are_Connected_to_Slack</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>category</name>
+            <value>
+                <stringValue>Flow</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>type</name>
+            <value>
+                <stringValue>test</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>area</name>
+            <value>
+                <stringValue>teset</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>summary</name>
+            <value>
+                <stringValue>Log After: Add Recipient, Before: Check If Users Are Connected to Slack</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>details</name>
+            <value>
+                <stringValue>Executed: Log After: Add Recipient, Before: Check If Users Are Connected to Slack</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>interviewGUID</name>
+            <value>
+                <stringValue>{!$Flow.InterviewGuid}</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>flowApiName</name>
+            <value>
+                <stringValue>testnewmp__Custom_DY_Screen_flow_Loop_Promer-4</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>level</name>
+            <value>
+                <stringValue>FINER</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>stacktrace</name>
+            <value>
+                <stringValue>{!h_a57f5f8d69da6cc6578c5e16393ec034_Pharos_Template}</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>fullStacktrace</name>
+            <value>
+                <stringValue>{!Pharos_Full_Stacktrace}</stringValue>
+            </value>
+        </inputParameters>
+        <outputParameters>
+            <assignToReference>Pharos_Full_Stacktrace</assignToReference>
+            <name>fullStacktrace</name>
+        </outputParameters>
+    </actionCalls>
+    <actionCalls>
+        <description>Source:Start,250,56|Target:Get_Accounts,550,182</description>
+        <name>h_5c3ef1c6b6623970c82df3da26d9bd41_PostPreLog</name>
+        <label>Log After: Start, Before: Get Accounts</label>
+        <locationX>182</locationX>
+        <locationY>400</locationY>
+        <actionName>TritonFlow</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <targetReference>Get_Accounts</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>category</name>
+            <value>
+                <stringValue>Flow</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>type</name>
+            <value>
+                <stringValue>test</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>area</name>
+            <value>
+                <stringValue>teset</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>summary</name>
+            <value>
+                <stringValue>Log After: Start, Before: Get Accounts</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>details</name>
+            <value>
+                <stringValue>Executed: Log After: Start, Before: Get Accounts</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>interviewGUID</name>
+            <value>
+                <stringValue>{!$Flow.InterviewGuid}</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>flowApiName</name>
+            <value>
+                <stringValue>testnewmp__Custom_DY_Screen_flow_Loop_Promer-4</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>level</name>
+            <value>
+                <stringValue>INFO</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>stacktrace</name>
+            <value>
+                <stringValue>{!h_4aaf7d26018a615e4866e9458b80a20a_Pharos_Template}</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>fullStacktrace</name>
+            <value>
+                <stringValue>{!Pharos_Full_Stacktrace}</stringValue>
+            </value>
+        </inputParameters>
+        <outputParameters>
+            <assignToReference>Pharos_Full_Stacktrace</assignToReference>
+            <name>fullStacktrace</name>
+        </outputParameters>
+    </actionCalls>
+    <actionCalls>
+        <description>Source:Increase_the_Count_by_5,1450,270|Target:Screen_1,1750,798</description>
+        <name>h_76323541c3c91c4936aa56b15057dbeb_PostPreLog</name>
+        <label>Log After: Increase the Count by 5, Before: Screen 1</label>
+        <locationX>798</locationX>
+        <locationY>1150</locationY>
+        <actionName>TritonFlow</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <targetReference>Screen_1</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>category</name>
+            <value>
+                <stringValue>Flow</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>type</name>
+            <value>
+                <stringValue>test</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>area</name>
+            <value>
+                <stringValue>teset</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>summary</name>
+            <value>
+                <stringValue>Log After: Increase the Count by 5, Before: Screen 1</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>details</name>
+            <value>
+                <stringValue>Executed: Log After: Increase the Count by 5, Before: Screen 1</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>interviewGUID</name>
+            <value>
+                <stringValue>{!$Flow.InterviewGuid}</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>flowApiName</name>
+            <value>
+                <stringValue>testnewmp__Custom_DY_Screen_flow_Loop_Promer-4</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>level</name>
+            <value>
+                <stringValue>FINER</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>stacktrace</name>
+            <value>
+                <stringValue>{!h_11c7832e821fd889a3094952cff1042e_Pharos_Template}</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>fullStacktrace</name>
+            <value>
+                <stringValue>{!Pharos_Full_Stacktrace}</stringValue>
+            </value>
+        </inputParameters>
+        <outputParameters>
+            <assignToReference>Pharos_Full_Stacktrace</assignToReference>
+            <name>fullStacktrace</name>
+        </outputParameters>
+    </actionCalls>
+    <actionCalls>
+        <description>Source:Increase_the_Count_by_4,1450,534|Target:Screen_1,1750,798</description>
+        <name>h_77d9dedd2747530a200c22b870405ff0_PostPreLog</name>
+        <label>Log After: Increase the Count by 4, Before: Screen 1</label>
+        <locationX>798</locationX>
+        <locationY>1150</locationY>
+        <actionName>TritonFlow</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <targetReference>Screen_1</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>category</name>
+            <value>
+                <stringValue>Flow</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>type</name>
+            <value>
+                <stringValue>test</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>area</name>
+            <value>
+                <stringValue>teset</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>summary</name>
+            <value>
+                <stringValue>Log After: Increase the Count by 4, Before: Screen 1</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>details</name>
+            <value>
+                <stringValue>Executed: Log After: Increase the Count by 4, Before: Screen 1</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>interviewGUID</name>
+            <value>
+                <stringValue>{!$Flow.InterviewGuid}</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>flowApiName</name>
+            <value>
+                <stringValue>testnewmp__Custom_DY_Screen_flow_Loop_Promer-4</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>level</name>
+            <value>
+                <stringValue>FINER</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>stacktrace</name>
+            <value>
+                <stringValue>{!h_e3c0a41e66daa825651c283cca8e6596_Pharos_Template}</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>fullStacktrace</name>
+            <value>
+                <stringValue>{!Pharos_Full_Stacktrace}</stringValue>
+            </value>
+        </inputParameters>
+        <outputParameters>
+            <assignToReference>Pharos_Full_Stacktrace</assignToReference>
+            <name>fullStacktrace</name>
+        </outputParameters>
+    </actionCalls>
+    <actionCalls>
+        <description>Source:Increase_the_Count_by_1,1450,1326|Target:Screen_1,1750,798</description>
+        <name>h_7d8142f1315f22ed82c56de94526954d_PostPreLog</name>
+        <label>Log After: Increase the Count by 1, Before: Screen 1</label>
+        <locationX>798</locationX>
+        <locationY>1150</locationY>
+        <actionName>TritonFlow</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <targetReference>Screen_1</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>category</name>
+            <value>
+                <stringValue>Flow</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>type</name>
+            <value>
+                <stringValue>test</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>area</name>
+            <value>
+                <stringValue>teset</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>summary</name>
+            <value>
+                <stringValue>Log After: Increase the Count by 1, Before: Screen 1</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>details</name>
+            <value>
+                <stringValue>Executed: Log After: Increase the Count by 1, Before: Screen 1</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>interviewGUID</name>
+            <value>
+                <stringValue>{!$Flow.InterviewGuid}</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>flowApiName</name>
+            <value>
+                <stringValue>testnewmp__Custom_DY_Screen_flow_Loop_Promer-4</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>level</name>
+            <value>
+                <stringValue>FINER</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>stacktrace</name>
+            <value>
+                <stringValue>{!h_12ef9c1f296c4ee747dec5fe67af2d33_Pharos_Template}</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>fullStacktrace</name>
+            <value>
+                <stringValue>{!Pharos_Full_Stacktrace}</stringValue>
+            </value>
+        </inputParameters>
+        <outputParameters>
+            <assignToReference>Pharos_Full_Stacktrace</assignToReference>
+            <name>fullStacktrace</name>
+        </outputParameters>
+    </actionCalls>
+    <actionCalls>
+        <description>Source:Loop_through_Accounts,850,182|Target:Account_Type,1150,798</description>
+        <name>h_969e436209655dc8c143f060da0c724c_PostPreLog</name>
+        <label>Log After: Loop through Accounts, Before: Account Type</label>
+        <locationX>798</locationX>
+        <locationY>700</locationY>
+        <actionName>TritonFlow</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <targetReference>Account_Type</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>category</name>
+            <value>
+                <stringValue>Flow</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>type</name>
+            <value>
+                <stringValue>test</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>area</name>
+            <value>
+                <stringValue>teset</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>summary</name>
+            <value>
+                <stringValue>Log After: Loop through Accounts, Before: Account Type</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>details</name>
+            <value>
+                <stringValue>Executed: Log After: Loop through Accounts, Before: Account Type</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>interviewGUID</name>
+            <value>
+                <stringValue>{!$Flow.InterviewGuid}</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>flowApiName</name>
+            <value>
+                <stringValue>testnewmp__Custom_DY_Screen_flow_Loop_Promer-4</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>level</name>
+            <value>
+                <stringValue>FINER</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>stacktrace</name>
+            <value>
+                <stringValue>{!h_d9b20ff726f0496d8658f17119a44419_Pharos_Template}</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>fullStacktrace</name>
+            <value>
+                <stringValue>{!Pharos_Full_Stacktrace}</stringValue>
+            </value>
+        </inputParameters>
+        <outputParameters>
+            <assignToReference>Pharos_Full_Stacktrace</assignToReference>
+            <name>fullStacktrace</name>
+        </outputParameters>
+    </actionCalls>
+    <actionCalls>
+        <description>Source:Loop_through_Accounts.NOMORE,850,182|Target:Screen_3,2050,182</description>
+        <name>h_a2efccd3f79e0e9e119f2f4e91f0a2f8_PostPreLog</name>
+        <label>Log After: Loop through Accounts, Before: Screen 3</label>
+        <locationX>182</locationX>
+        <locationY>700</locationY>
+        <actionName>TritonFlow</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <targetReference>Screen_3</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>category</name>
+            <value>
+                <stringValue>Flow</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>type</name>
+            <value>
+                <stringValue>test</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>area</name>
+            <value>
+                <stringValue>teset</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>summary</name>
+            <value>
+                <stringValue>Log After: Loop through Accounts, Before: Screen 3</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>details</name>
+            <value>
+                <stringValue>Executed: Log After: Loop through Accounts, Before: Screen 3</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>interviewGUID</name>
+            <value>
+                <stringValue>{!$Flow.InterviewGuid}</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>flowApiName</name>
+            <value>
+                <stringValue>testnewmp__Custom_DY_Screen_flow_Loop_Promer-4</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>level</name>
+            <value>
+                <stringValue>FINER</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>stacktrace</name>
+            <value>
+                <stringValue>{!h_8706ae6fdcbf1f12af7b15379454b78f_Pharos_Template}</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>fullStacktrace</name>
+            <value>
+                <stringValue>{!Pharos_Full_Stacktrace}</stringValue>
+            </value>
+        </inputParameters>
+        <outputParameters>
+            <assignToReference>Pharos_Full_Stacktrace</assignToReference>
+            <name>fullStacktrace</name>
+        </outputParameters>
+    </actionCalls>
+    <actionCalls>
+        <description>Source:Has_Team_Member_To_Send_Notification:Has_Members,1366,182|Target:Send_Slack_notification,3250,50</description>
+        <name>h_b2accb3e7ebf13e11daa5f839a24dfdd_PostPreLog</name>
+        <label>Log After: Has Members, Before: Send Slack notification</label>
+        <locationX>50</locationX>
+        <locationY>1000</locationY>
+        <actionName>TritonFlow</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <targetReference>Send_Slack_notification</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>category</name>
+            <value>
+                <stringValue>Flow</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>type</name>
+            <value>
+                <stringValue>test</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>area</name>
+            <value>
+                <stringValue>teset</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>summary</name>
+            <value>
+                <stringValue>Log After: Has Members, Before: Send Slack notification</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>details</name>
+            <value>
+                <stringValue>Executed: Log After: Has Members, Before: Send Slack notification</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>interviewGUID</name>
+            <value>
+                <stringValue>{!$Flow.InterviewGuid}</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>flowApiName</name>
+            <value>
+                <stringValue>testnewmp__Custom_DY_Screen_flow_Loop_Promer-4</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>level</name>
+            <value>
+                <stringValue>FINER</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>stacktrace</name>
+            <value>
+                <stringValue>{!h_eaaf11250cf4908eda5c4220d6c6c9ab_Pharos_Template}</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>fullStacktrace</name>
+            <value>
+                <stringValue>{!Pharos_Full_Stacktrace}</stringValue>
+            </value>
+        </inputParameters>
+        <outputParameters>
+            <assignToReference>Pharos_Full_Stacktrace</assignToReference>
+            <name>fullStacktrace</name>
+        </outputParameters>
+    </actionCalls>
+    <actionCalls>
+        <description>Source:Increase_the_Count_by_3,1450,798|Target:Screen_1,1750,798</description>
+        <name>h_bc1736d3b27edaadc84bd6fea6f90961_PostPreLog</name>
+        <label>Log After: Increase the Count by 3, Before: Screen 1</label>
+        <locationX>798</locationX>
+        <locationY>1150</locationY>
+        <actionName>TritonFlow</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <targetReference>Screen_1</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>category</name>
+            <value>
+                <stringValue>Flow</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>type</name>
+            <value>
+                <stringValue>test</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>area</name>
+            <value>
+                <stringValue>teset</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>summary</name>
+            <value>
+                <stringValue>Log After: Increase the Count by 3, Before: Screen 1</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>details</name>
+            <value>
+                <stringValue>Executed: Log After: Increase the Count by 3, Before: Screen 1</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>interviewGUID</name>
+            <value>
+                <stringValue>{!$Flow.InterviewGuid}</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>flowApiName</name>
+            <value>
+                <stringValue>testnewmp__Custom_DY_Screen_flow_Loop_Promer-4</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>level</name>
+            <value>
+                <stringValue>FINER</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>stacktrace</name>
+            <value>
+                <stringValue>{!h_d9cd3d6153528845a7a58c838f0e8703_Pharos_Template}</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>fullStacktrace</name>
+            <value>
+                <stringValue>{!Pharos_Full_Stacktrace}</stringValue>
+            </value>
+        </inputParameters>
+        <outputParameters>
+            <assignToReference>Pharos_Full_Stacktrace</assignToReference>
+            <name>fullStacktrace</name>
+        </outputParameters>
+    </actionCalls>
+    <actionCalls>
+        <description>Source:Account_Type:Customer_Channel,550,798|Target:Increase_the_Count_by_5,1450,270</description>
+        <name>h_c2c451370b0479646b2d03654f4089ef_PostPreLog</name>
+        <label>Log After: Customer - Channel, Before: Increase the Count by 5</label>
+        <locationX>270</locationX>
+        <locationY>550</locationY>
+        <actionName>TritonFlow</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <targetReference>Increase_the_Count_by_5</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>category</name>
+            <value>
+                <stringValue>Flow</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>type</name>
+            <value>
+                <stringValue>test</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>area</name>
+            <value>
+                <stringValue>teset</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>summary</name>
+            <value>
+                <stringValue>Log After: Customer - Channel, Before: Increase the Count by 5</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>details</name>
+            <value>
+                <stringValue>Executed: Log After: Customer - Channel, Before: Increase the Count by 5</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>interviewGUID</name>
+            <value>
+                <stringValue>{!$Flow.InterviewGuid}</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>flowApiName</name>
+            <value>
+                <stringValue>testnewmp__Custom_DY_Screen_flow_Loop_Promer-4</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>level</name>
+            <value>
+                <stringValue>FINER</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>stacktrace</name>
+            <value>
+                <stringValue>{!h_12dbf57bb38c17993535ff8c18bb4bbc_Pharos_Template}</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>fullStacktrace</name>
+            <value>
+                <stringValue>{!Pharos_Full_Stacktrace}</stringValue>
+            </value>
+        </inputParameters>
+        <outputParameters>
+            <assignToReference>Pharos_Full_Stacktrace</assignToReference>
+            <name>fullStacktrace</name>
+        </outputParameters>
+    </actionCalls>
+    <actionCalls>
+        <description>Source:Check_If_Users_Are_Connected_to_Slack,2650,182|Target:Has_Team_Member_To_Send_Notification,2950,182</description>
+        <name>h_dccb463114fe65582b42b5d811153813_PostPreLog</name>
+        <label>Log After: Check If Users Are Connect..., Before: Has Team Member To Send Not...</label>
+        <locationX>182</locationX>
+        <locationY>1750</locationY>
+        <actionName>TritonFlow</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <targetReference>Has_Team_Member_To_Send_Notification</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>category</name>
+            <value>
+                <stringValue>Flow</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>type</name>
+            <value>
+                <stringValue>test</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>area</name>
+            <value>
+                <stringValue>teset</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>summary</name>
+            <value>
+                <stringValue>Log After: Check If Users Are Connect..., Before: Has Team Member To Send Not...</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>details</name>
+            <value>
+                <stringValue>Executed: Log After: Check If Users Are Connect..., Before: Has Team Member To Send Not...</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>interviewGUID</name>
+            <value>
+                <stringValue>{!$Flow.InterviewGuid}</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>flowApiName</name>
+            <value>
+                <stringValue>testnewmp__Custom_DY_Screen_flow_Loop_Promer-4</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>level</name>
+            <value>
+                <stringValue>DEBUG</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>stacktrace</name>
+            <value>
+                <stringValue>{!h_9e4a26915ed0588b0fcbeef9f5e4b474_Pharos_Template}</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>fullStacktrace</name>
+            <value>
+                <stringValue>{!Pharos_Full_Stacktrace}</stringValue>
+            </value>
+        </inputParameters>
+        <outputParameters>
+            <assignToReference>Pharos_Full_Stacktrace</assignToReference>
+            <name>fullStacktrace</name>
+        </outputParameters>
+    </actionCalls>
+    <actionCalls>
+        <description>Source:Increase_the_Count_by_2,1450,1062|Target:Screen_1,1750,798</description>
+        <name>h_df0ee78a5ac4b591530877ac9c14ac13_PostPreLog</name>
+        <label>Log After: Increase the Count by 2, Before: Screen 1</label>
+        <locationX>798</locationX>
+        <locationY>1150</locationY>
+        <actionName>TritonFlow</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <targetReference>Screen_1</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>category</name>
+            <value>
+                <stringValue>Flow</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>type</name>
+            <value>
+                <stringValue>test</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>area</name>
+            <value>
+                <stringValue>teset</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>summary</name>
+            <value>
+                <stringValue>Log After: Increase the Count by 2, Before: Screen 1</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>details</name>
+            <value>
+                <stringValue>Executed: Log After: Increase the Count by 2, Before: Screen 1</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>interviewGUID</name>
+            <value>
+                <stringValue>{!$Flow.InterviewGuid}</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>flowApiName</name>
+            <value>
+                <stringValue>testnewmp__Custom_DY_Screen_flow_Loop_Promer-4</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>level</name>
+            <value>
+                <stringValue>FINER</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>stacktrace</name>
+            <value>
+                <stringValue>{!h_e56dd2df149af85ab23d4dba3c250c76_Pharos_Template}</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>fullStacktrace</name>
+            <value>
+                <stringValue>{!Pharos_Full_Stacktrace}</stringValue>
+            </value>
+        </inputParameters>
+        <outputParameters>
+            <assignToReference>Pharos_Full_Stacktrace</assignToReference>
+            <name>fullStacktrace</name>
+        </outputParameters>
+    </actionCalls>
+    <actionCalls>
+        <description>Source:Account_Type,1150,798|Target:Increase_the_Count_by_1,1450,1326</description>
+        <name>h_e21caa1c982a3084305b28aa8bca0618_PostPreLog</name>
+        <label>Log After: Account Type, Before: Increase the Count by 1</label>
+        <locationX>1326</locationX>
+        <locationY>850</locationY>
+        <actionName>TritonFlow</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <targetReference>Increase_the_Count_by_1</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>category</name>
+            <value>
+                <stringValue>Flow</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>type</name>
+            <value>
+                <stringValue>test</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>area</name>
+            <value>
+                <stringValue>teset</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>summary</name>
+            <value>
+                <stringValue>Log After: Account Type, Before: Increase the Count by 1</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>details</name>
+            <value>
+                <stringValue>Executed: Log After: Account Type, Before: Increase the Count by 1</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>interviewGUID</name>
+            <value>
+                <stringValue>{!$Flow.InterviewGuid}</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>flowApiName</name>
+            <value>
+                <stringValue>testnewmp__Custom_DY_Screen_flow_Loop_Promer-4</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>level</name>
+            <value>
+                <stringValue>DEBUG</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>stacktrace</name>
+            <value>
+                <stringValue>{!h_90268d843435ee4948b1cb90f39ad92c_Pharos_Template}</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>fullStacktrace</name>
+            <value>
+                <stringValue>{!Pharos_Full_Stacktrace}</stringValue>
+            </value>
+        </inputParameters>
+        <outputParameters>
+            <assignToReference>Pharos_Full_Stacktrace</assignToReference>
+            <name>fullStacktrace</name>
+        </outputParameters>
+    </actionCalls>
+    <actionCalls>
+        <description>Source:Create_Opp,3550,50|Target:null,0,0</description>
+        <name>h_ec208eb9e0db86c502383a5be1b43a7b_PostLog</name>
+        <label>Log After: Create Opp</label>
+        <locationX>50</locationX>
+        <locationY>2200</locationY>
+        <actionName>TritonFlow</actionName>
+        <actionType>apex</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>category</name>
+            <value>
+                <stringValue>Flow</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>type</name>
+            <value>
+                <stringValue>test</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>area</name>
+            <value>
+                <stringValue>teset</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>summary</name>
+            <value>
+                <stringValue>Log After: Create Opp</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>details</name>
+            <value>
+                <stringValue>Executed: Log After: Create Opp</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>interviewGUID</name>
+            <value>
+                <stringValue>{!$Flow.InterviewGuid}</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>flowApiName</name>
+            <value>
+                <stringValue>testnewmp__Custom_DY_Screen_flow_Loop_Promer-4</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>level</name>
+            <value>
+                <stringValue>DEBUG</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>stacktrace</name>
+            <value>
+                <stringValue>{!h_32240d56fb61e9f7786ee678234a5ea3_Pharos_Template}</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>fullStacktrace</name>
+            <value>
+                <stringValue>{!Pharos_Full_Stacktrace}</stringValue>
+            </value>
+        </inputParameters>
+        <outputParameters>
+            <assignToReference>Pharos_Full_Stacktrace</assignToReference>
+            <name>fullStacktrace</name>
+        </outputParameters>
+    </actionCalls>
+    <actionCalls>
+        <description>Source:Get_Accounts,550,182|Target:Loop_through_Accounts,850,182</description>
+        <name>h_f273d41278e39a52c01ba853cf99950f_PostPreLog</name>
+        <label>Log After: Get Accounts, Before: Loop through Accounts</label>
+        <locationX>182</locationX>
+        <locationY>550</locationY>
+        <actionName>TritonFlow</actionName>
+        <actionType>apex</actionType>
+        <connector>
+            <targetReference>Loop_through_Accounts</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>category</name>
+            <value>
+                <stringValue>Flow</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>type</name>
+            <value>
+                <stringValue>test</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>area</name>
+            <value>
+                <stringValue>teset</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>summary</name>
+            <value>
+                <stringValue>Log After: Get Accounts, Before: Loop through Accounts</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>details</name>
+            <value>
+                <stringValue>Executed: Log After: Get Accounts, Before: Loop through Accounts</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>interviewGUID</name>
+            <value>
+                <stringValue>{!$Flow.InterviewGuid}</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>flowApiName</name>
+            <value>
+                <stringValue>testnewmp__Custom_DY_Screen_flow_Loop_Promer-4</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>level</name>
+            <value>
+                <stringValue>DEBUG</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>stacktrace</name>
+            <value>
+                <stringValue>{!h_9b251d9286f4bd248f0df2cd16b1d9da_Pharos_Template}</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>fullStacktrace</name>
+            <value>
+                <stringValue>{!Pharos_Full_Stacktrace}</stringValue>
+            </value>
+        </inputParameters>
+        <outputParameters>
+            <assignToReference>Pharos_Full_Stacktrace</assignToReference>
+            <name>fullStacktrace</name>
+        </outputParameters>
+    </actionCalls>
+    <actionCalls>
+        <description>Source:Has_Team_Member_To_Send_Notification,2950,182|Target:null,0,0</description>
+        <name>h_f8402aef03a20ac1abef87178c197077_PostLog</name>
+        <label>Log After: Has Team Member To Send Notification</label>
+        <locationX>182</locationX>
+        <locationY>1900</locationY>
+        <actionName>TritonFlow</actionName>
+        <actionType>apex</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>category</name>
+            <value>
+                <stringValue>Flow</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>type</name>
+            <value>
+                <stringValue>test</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>area</name>
+            <value>
+                <stringValue>teset</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>summary</name>
+            <value>
+                <stringValue>Log After: Has Team Member To Send Notification</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>details</name>
+            <value>
+                <stringValue>Executed: Log After: Has Team Member To Send Notification</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>interviewGUID</name>
+            <value>
+                <stringValue>{!$Flow.InterviewGuid}</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>flowApiName</name>
+            <value>
+                <stringValue>testnewmp__Custom_DY_Screen_flow_Loop_Promer-4</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>level</name>
+            <value>
+                <stringValue>DEBUG</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>stacktrace</name>
+            <value>
+                <stringValue>{!h_5d6bd4bc62ca3dc3d7b6369a7320c5d5_Pharos_Template}</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>fullStacktrace</name>
+            <value>
+                <stringValue>{!Pharos_Full_Stacktrace}</stringValue>
+            </value>
+        </inputParameters>
+        <outputParameters>
+            <assignToReference>Pharos_Full_Stacktrace</assignToReference>
+            <name>fullStacktrace</name>
+        </outputParameters>
+    </actionCalls>
+    <actionCalls>
+        <name>Send_Slack_notification</name>
+        <label>Send Slack notification</label>
+        <locationX>50</locationX>
+        <locationY>1900</locationY>
+        <actionName>slackPostMessage</actionName>
+        <actionType>slackPostMessage</actionType>
+        <connector>
+            <targetReference>h_42e6f4931ba59e62714614aeff240b1b_PostPreLog</targetReference>
+        </connector>
+        <flowTransactionModel>Automatic</flowTransactionModel>
+        <inputParameters>
+            <name>slackAppIdForToken</name>
+            <value>
+                <stringValue>A03269G3DNE</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>slackWorkspaceIdForToken</name>
+            <value>
+                <stringValue>T07CM66NMRQ</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>slackConversationId</name>
+            <value>
+                <stringValue>C07D9VC9FGQ</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>slackMessage</name>
+            <value>
+                <stringValue>Test Slack Message</stringValue>
+            </value>
+        </inputParameters>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </actionCalls>
+    <apiVersion>63.0</apiVersion>
+    <assignments>
+        <name>Add_Recipient</name>
+        <label>Add Recipient</label>
+        <locationX>182</locationX>
+        <locationY>1450</locationY>
+        <assignmentItems>
+            <assignToReference>RecipientId2</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <stringValue>005ak0000072HrxAAE</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>h_46d58bf9faf3721819dcfd40499b2f98_PostPreLog</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Increase_the_Count_by_1</name>
+        <label>Increase the Count by 1</label>
+        <locationX>1326</locationX>
+        <locationY>1000</locationY>
+        <assignmentItems>
+            <assignToReference>Count</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <numberValue>1.0</numberValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>h_7d8142f1315f22ed82c56de94526954d_PostPreLog</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Increase_the_Count_by_2</name>
+        <label>Increase the Count by 2</label>
+        <locationX>1062</locationX>
+        <locationY>1000</locationY>
+        <assignmentItems>
+            <assignToReference>Count</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <numberValue>2.0</numberValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>h_df0ee78a5ac4b591530877ac9c14ac13_PostPreLog</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Increase_the_Count_by_3</name>
+        <label>Increase the Count by 3</label>
+        <locationX>798</locationX>
+        <locationY>1000</locationY>
+        <assignmentItems>
+            <assignToReference>Count</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <numberValue>3.0</numberValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>h_bc1736d3b27edaadc84bd6fea6f90961_PostPreLog</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Increase_the_Count_by_4</name>
+        <label>Increase the Count by 4</label>
+        <locationX>534</locationX>
+        <locationY>1000</locationY>
+        <assignmentItems>
+            <assignToReference>Count</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <numberValue>4.0</numberValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>h_77d9dedd2747530a200c22b870405ff0_PostPreLog</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Increase_the_Count_by_5</name>
+        <label>Increase the Count by 5</label>
+        <locationX>270</locationX>
+        <locationY>1000</locationY>
+        <assignmentItems>
+            <assignToReference>Count</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <numberValue>5.0</numberValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>h_76323541c3c91c4936aa56b15057dbeb_PostPreLog</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <name>Account_Type</name>
+        <label>Account Type</label>
+        <locationX>798</locationX>
+        <locationY>700</locationY>
+        <defaultConnector>
+            <targetReference>h_e21caa1c982a3084305b28aa8bca0618_PostPreLog</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Customer_Channel</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Loop_through_Accounts.Type</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Customer - Channel</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>h_c2c451370b0479646b2d03654f4089ef_PostPreLog</targetReference>
+            </connector>
+            <label>Customer - Channel</label>
+        </rules>
+        <rules>
+            <name>Customer_Direct</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Loop_through_Accounts.Type</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Customer - Direct</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>h_1fa3c8e13bc001f5ace1284f213a6a8a_PostPreLog</targetReference>
+            </connector>
+            <label>Customer - Direct</label>
+        </rules>
+        <rules>
+            <name>Prospect</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Loop_through_Accounts.Type</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Prospect</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>h_1a34eaba7eeafd9b7afc04e40ebf0a11_PostPreLog</targetReference>
+            </connector>
+            <label>Prospect</label>
+        </rules>
+        <rules>
+            <name>Technology_Partner</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Loop_through_Accounts.Type</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Technology Partner</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>h_01b8d7b10f85897d48ce09062b16cfcf_PostPreLog</targetReference>
+            </connector>
+            <label>Technology Partner</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Has_Team_Member_To_Send_Notification</name>
+        <label>Has Team Member To Send Notification</label>
+        <locationX>182</locationX>
+        <locationY>1750</locationY>
+        <defaultConnector>
+            <targetReference>h_f8402aef03a20ac1abef87178c197077_PostLog</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Has_Members</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>RecipientId2</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>h_b2accb3e7ebf13e11daa5f839a24dfdd_PostPreLog</targetReference>
+            </connector>
+            <label>Has Members</label>
+        </rules>
+    </decisions>
+    <interviewLabel>Custom DY - Screen flow - Loop Promer {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Custom DY - Screen flow - Loop Promer</label>
+    <loops>
+        <name>Loop_through_Accounts</name>
+        <label>Loop through Accounts</label>
+        <locationX>182</locationX>
+        <locationY>550</locationY>
+        <collectionReference>Get_Accounts</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>h_969e436209655dc8c143f060da0c724c_PostPreLog</targetReference>
+        </nextValueConnector>
+        <noMoreValuesConnector>
+            <targetReference>h_a2efccd3f79e0e9e119f2f4e91f0a2f8_PostPreLog</targetReference>
+        </noMoreValuesConnector>
+    </loops>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>Flow</processType>
+    <recordCreates>
+        <name>Create_Opp</name>
+        <label>Create Opp</label>
+        <locationX>50</locationX>
+        <locationY>2050</locationY>
+        <connector>
+            <targetReference>h_ec208eb9e0db86c502383a5be1b43a7b_PostLog</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>CloseDate</field>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Name</field>
+        </inputAssignments>
+        <inputAssignments>
+            <field>StageName</field>
+        </inputAssignments>
+        <object>Opportunity</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordLookups>
+        <name>Get_Accounts</name>
+        <label>Get Accounts</label>
+        <locationX>182</locationX>
+        <locationY>400</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>h_f273d41278e39a52c01ba853cf99950f_PostPreLog</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Type</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Customer - Channel</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>false</getFirstRecordOnly>
+        <object>Account</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <screens>
+        <name>Screen_1</name>
+        <label>Screen 1</label>
+        <locationX>798</locationX>
+        <locationY>1150</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <connector>
+            <targetReference>h_06f6ae9de1eba7221406a3d44f1f91d9_PostPreLog</targetReference>
+        </connector>
+        <fields>
+            <name>Display_Text_1</name>
+            <fieldText>&lt;p&gt;The current Account Name is: &lt;strong&gt;{!Loop_through_Accounts.Name}&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;And the current score is:&lt;/p&gt;&lt;p&gt;&lt;strong&gt;{!Count}&lt;/strong&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <name>Screen_3</name>
+        <label>Screen 3</label>
+        <locationX>182</locationX>
+        <locationY>1300</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <connector>
+            <targetReference>h_4219ea428a412ff3463ea6722819fbbc_PostPreLog</targetReference>
+        </connector>
+        <fields>
+            <name>DisplayTextTwo</name>
+            <fieldText>&lt;p&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); font-size: 20px; color: rgb(68, 68, 68);&quot;&gt;You have now iterated through loop collection!&lt;/span&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <start>
+        <locationX>56</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>h_5c3ef1c6b6623970c82df3da26d9bd41_PostPreLog</targetReference>
+        </connector>
+    </start>
+    <status>Draft</status>
+    <textTemplates>
+        <description>Pharos Flow Template for Log After: Screen 3, Before: Add Recipient</description>
+        <name>h_089fc3366074151d14d0d7ef361d1df4_Pharos_Template</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>&lt;p&gt;
+&lt;span style=&quot;font-weight:bold;&quot;&gt;SCREEN: &lt;/span&gt;Screen 3&lt;br&gt;
+&lt;span style=&quot;font-weight:bold;&quot;&gt;DisplayTextTwo: &lt;/span&gt;DisplayTextTwo&lt;br&gt;
+&lt;span&gt;Type: DisplayText&lt;/span&gt;&lt;br&gt;
+&lt;span&gt;Required: null&lt;/span&gt;&lt;br&gt;
+&lt;span&gt;Value at runtime: {!DisplayTextTwo}&lt;/span&gt;&lt;br&gt;
+
+&lt;/p&gt;
+&lt;p&gt;
+&lt;span style=&quot;font-weight:bold;&quot;&gt;(APEX): &lt;/span&gt;h_4219ea428a412ff3463ea6722819fbbc_PostPreLog&lt;br&gt;
+&lt;span style=&quot;font-weight:bold;&quot;&gt;Inputs:&lt;/span&gt;&lt;br&gt;
+
+&lt;span style=&quot;font-weight:bold;&quot;&gt;Outputs:&lt;/span&gt;&lt;br&gt;
+
+&lt;/p&gt;</text>
+    </textTemplates>
+    <textTemplates>
+        <description>Pharos Flow Template for Log After: Increase the Count by 5, Before: Screen 1</description>
+        <name>h_11c7832e821fd889a3094952cff1042e_Pharos_Template</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>&lt;p&gt;
+&lt;span style=&quot;font-weight:bold;&quot;&gt;ASSIGNMENT: &lt;/span&gt;Increase the Count by 5&lt;br&gt;
+&lt;span&gt;Count Add 5.0&lt;/span&gt;&lt;br&gt;
+&lt;span style=&quot;font-weight:bold;&quot;&gt;Result&lt;/span&gt;&lt;br&gt;
+&lt;span&gt;Count = {!Count}&lt;/span&gt;&lt;br&gt;
+&lt;/p&gt;
+&lt;p&gt;
+&lt;span style=&quot;font-weight:bold;&quot;&gt;(APEX): &lt;/span&gt;h_76323541c3c91c4936aa56b15057dbeb_PostPreLog&lt;br&gt;
+&lt;span style=&quot;font-weight:bold;&quot;&gt;Inputs:&lt;/span&gt;&lt;br&gt;
+
+&lt;span style=&quot;font-weight:bold;&quot;&gt;Outputs:&lt;/span&gt;&lt;br&gt;
+
+&lt;/p&gt;</text>
+    </textTemplates>
+    <textTemplates>
+        <description>Pharos Flow Template for Log After: Screen 1, Before: Loop through Accounts</description>
+        <name>h_127f53a8375cc01a1c760ff60e9891b3_Pharos_Template</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>&lt;p&gt;
+&lt;span style=&quot;font-weight:bold;&quot;&gt;SCREEN: &lt;/span&gt;Screen 1&lt;br&gt;
+&lt;span style=&quot;font-weight:bold;&quot;&gt;Display_Text_1: &lt;/span&gt;Display_Text_1&lt;br&gt;
+&lt;span&gt;Type: DisplayText&lt;/span&gt;&lt;br&gt;
+&lt;span&gt;Required: null&lt;/span&gt;&lt;br&gt;
+&lt;span&gt;Value at runtime: {!Display_Text_1}&lt;/span&gt;&lt;br&gt;
+
+&lt;/p&gt;
+&lt;p&gt;
+&lt;span style=&quot;font-weight:bold;&quot;&gt;(APEX): &lt;/span&gt;h_06f6ae9de1eba7221406a3d44f1f91d9_PostPreLog&lt;br&gt;
+&lt;span style=&quot;font-weight:bold;&quot;&gt;Inputs:&lt;/span&gt;&lt;br&gt;
+
+&lt;span style=&quot;font-weight:bold;&quot;&gt;Outputs:&lt;/span&gt;&lt;br&gt;
+
+&lt;/p&gt;</text>
+    </textTemplates>
+    <textTemplates>
+        <description>Pharos Flow Template for Log After: Customer - Channel, Before: Increase the Count by 5</description>
+        <name>h_12dbf57bb38c17993535ff8c18bb4bbc_Pharos_Template</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>&lt;p&gt;
+&lt;span style=&quot;font-weight:bold;&quot;&gt;DECISION: &lt;/span&gt;Account Type&lt;br&gt;
+&lt;span&gt;Skipped this outcome because its conditions weren&apos;t met: Customer_Direct&lt;/span&gt;&lt;br&gt;
+&lt;span&gt;Outcome conditions: &lt;/span&gt;&lt;br&gt;
+&lt;span&gt;\{!Loop_through_Accounts.Type} ({!Loop_through_Accounts.Type}) EqualTo Customer - Direct&lt;/span&gt;&lt;br&gt;
+&lt;span&gt;All conditions must be true (and)&lt;/span&gt;&lt;br&gt;
+&lt;br/&gt;
+&lt;span&gt;Skipped this outcome because its conditions weren&apos;t met: Prospect&lt;/span&gt;&lt;br&gt;
+&lt;span&gt;Outcome conditions: &lt;/span&gt;&lt;br&gt;
+&lt;span&gt;\{!Loop_through_Accounts.Type} ({!Loop_through_Accounts.Type}) EqualTo Prospect&lt;/span&gt;&lt;br&gt;
+&lt;span&gt;All conditions must be true (and)&lt;/span&gt;&lt;br&gt;
+&lt;br/&gt;
+&lt;span&gt;Skipped this outcome because its conditions weren&apos;t met: Technology_Partner&lt;/span&gt;&lt;br&gt;
+&lt;span&gt;Outcome conditions: &lt;/span&gt;&lt;br&gt;
+&lt;span&gt;\{!Loop_through_Accounts.Type} ({!Loop_through_Accounts.Type}) EqualTo Technology Partner&lt;/span&gt;&lt;br&gt;
+&lt;span&gt;All conditions must be true (and)&lt;/span&gt;&lt;br&gt;
+&lt;br/&gt;
+&lt;span&gt;Outcome executed: Customer_Channel&lt;/span&gt;&lt;br&gt;
+&lt;span&gt;Outcome conditions: &lt;/span&gt;&lt;br&gt;
+&lt;span&gt;\{!Loop_through_Accounts.Type} ({!Loop_through_Accounts.Type}) EqualTo Customer - Channel&lt;/span&gt;&lt;br&gt;
+
+&lt;span&gt;All conditions must be true (and)&lt;/span&gt;&lt;br&gt;
+&lt;/p&gt;
+&lt;p&gt;
+&lt;span style=&quot;font-weight:bold;&quot;&gt;(APEX): &lt;/span&gt;h_c2c451370b0479646b2d03654f4089ef_PostPreLog&lt;br&gt;
+&lt;span style=&quot;font-weight:bold;&quot;&gt;Inputs:&lt;/span&gt;&lt;br&gt;
+
+&lt;span style=&quot;font-weight:bold;&quot;&gt;Outputs:&lt;/span&gt;&lt;br&gt;
+
+&lt;/p&gt;</text>
+    </textTemplates>
+    <textTemplates>
+        <description>Pharos Flow Template for Log After: Increase the Count by 1, Before: Screen 1</description>
+        <name>h_12ef9c1f296c4ee747dec5fe67af2d33_Pharos_Template</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>&lt;p&gt;
+&lt;span style=&quot;font-weight:bold;&quot;&gt;ASSIGNMENT: &lt;/span&gt;Increase the Count by 1&lt;br&gt;
+&lt;span&gt;Count Add 1.0&lt;/span&gt;&lt;br&gt;
+&lt;span style=&quot;font-weight:bold;&quot;&gt;Result&lt;/span&gt;&lt;br&gt;
+&lt;span&gt;Count = {!Count}&lt;/span&gt;&lt;br&gt;
+&lt;/p&gt;
+&lt;p&gt;
+&lt;span style=&quot;font-weight:bold;&quot;&gt;(APEX): &lt;/span&gt;h_7d8142f1315f22ed82c56de94526954d_PostPreLog&lt;br&gt;
+&lt;span style=&quot;font-weight:bold;&quot;&gt;Inputs:&lt;/span&gt;&lt;br&gt;
+
+&lt;span style=&quot;font-weight:bold;&quot;&gt;Outputs:&lt;/span&gt;&lt;br&gt;
+
+&lt;/p&gt;</text>
+    </textTemplates>
+    <textTemplates>
+        <description>Pharos Flow Template for Log After: Customer - Direct, Before: Increase the Count by 4</description>
+        <name>h_1675f19da70ed65d057a5cf49750970f_Pharos_Template</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>&lt;p&gt;
+&lt;span style=&quot;font-weight:bold;&quot;&gt;DECISION: &lt;/span&gt;Account Type&lt;br&gt;
+&lt;span&gt;Skipped this outcome because its conditions weren&apos;t met: Customer_Channel&lt;/span&gt;&lt;br&gt;
+&lt;span&gt;Outcome conditions: &lt;/span&gt;&lt;br&gt;
+&lt;span&gt;\{!Loop_through_Accounts.Type} ({!Loop_through_Accounts.Type}) EqualTo Customer - Channel&lt;/span&gt;&lt;br&gt;
+&lt;span&gt;All conditions must be true (and)&lt;/span&gt;&lt;br&gt;
+&lt;br/&gt;
+&lt;span&gt;Skipped this outcome because its conditions weren&apos;t met: Prospect&lt;/span&gt;&lt;br&gt;
+&lt;span&gt;Outcome conditions: &lt;/span&gt;&lt;br&gt;
+&lt;span&gt;\{!Loop_through_Accounts.Type} ({!Loop_through_Accounts.Type}) EqualTo Prospect&lt;/span&gt;&lt;br&gt;
+&lt;span&gt;All conditions must be true (and)&lt;/span&gt;&lt;br&gt;
+&lt;br/&gt;
+&lt;span&gt;Skipped this outcome because its conditions weren&apos;t met: Technology_Partner&lt;/span&gt;&lt;br&gt;
+&lt;span&gt;Outcome conditions: &lt;/span&gt;&lt;br&gt;
+&lt;span&gt;\{!Loop_through_Accounts.Type} ({!Loop_through_Accounts.Type}) EqualTo Technology Partner&lt;/span&gt;&lt;br&gt;
+&lt;span&gt;All conditions must be true (and)&lt;/span&gt;&lt;br&gt;
+&lt;br/&gt;
+&lt;span&gt;Outcome executed: Customer_Direct&lt;/span&gt;&lt;br&gt;
+&lt;span&gt;Outcome conditions: &lt;/span&gt;&lt;br&gt;
+&lt;span&gt;\{!Loop_through_Accounts.Type} ({!Loop_through_Accounts.Type}) EqualTo Customer - Direct&lt;/span&gt;&lt;br&gt;
+
+&lt;span&gt;All conditions must be true (and)&lt;/span&gt;&lt;br&gt;
+&lt;/p&gt;
+&lt;p&gt;
+&lt;span style=&quot;font-weight:bold;&quot;&gt;(APEX): &lt;/span&gt;h_1fa3c8e13bc001f5ace1284f213a6a8a_PostPreLog&lt;br&gt;
+&lt;span style=&quot;font-weight:bold;&quot;&gt;Inputs:&lt;/span&gt;&lt;br&gt;
+
+&lt;span style=&quot;font-weight:bold;&quot;&gt;Outputs:&lt;/span&gt;&lt;br&gt;
+
+&lt;/p&gt;</text>
+    </textTemplates>
+    <textTemplates>
+        <description>Pharos Flow Template for Log After: Create Opp</description>
+        <name>h_32240d56fb61e9f7786ee678234a5ea3_Pharos_Template</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>&lt;p&gt;
+&lt;span style=&quot;font-weight:bold;&quot;&gt;CREATE RECORDS: &lt;/span&gt;Create Opp&lt;br&gt;
+&lt;span&gt;Create Opportunity record(s) with these field values:&lt;/span&gt;&lt;br&gt;
+&lt;span&gt;CloseDate = null&lt;/span&gt;&lt;br&gt;
+&lt;span&gt;Name = null&lt;/span&gt;&lt;br&gt;
+&lt;span&gt;StageName = null&lt;/span&gt;&lt;br&gt;
+&lt;span style=&quot;font-weight:bold;&quot;&gt;Result&lt;/span&gt;&lt;br&gt;
+&lt;span&gt;\{!Create_Opp} ({!Create_Opp})&lt;/span&gt;&lt;br&gt;
+&lt;/p&gt;
+&lt;p&gt;
+&lt;span style=&quot;font-weight:bold;&quot;&gt;(APEX): &lt;/span&gt;h_ec208eb9e0db86c502383a5be1b43a7b_PostLog&lt;br&gt;
+&lt;span style=&quot;font-weight:bold;&quot;&gt;Inputs:&lt;/span&gt;&lt;br&gt;
+
+&lt;span style=&quot;font-weight:bold;&quot;&gt;Outputs:&lt;/span&gt;&lt;br&gt;
+
+&lt;/p&gt;</text>
+    </textTemplates>
+    <textTemplates>
+        <description>Pharos Flow Template for Log After: Prospect, Before: Increase the Count by 3</description>
+        <name>h_4529eecbb44a94d1c9d1f4184e882bab_Pharos_Template</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>&lt;p&gt;
+&lt;span style=&quot;font-weight:bold;&quot;&gt;DECISION: &lt;/span&gt;Account Type&lt;br&gt;
+&lt;span&gt;Skipped this outcome because its conditions weren&apos;t met: Customer_Channel&lt;/span&gt;&lt;br&gt;
+&lt;span&gt;Outcome conditions: &lt;/span&gt;&lt;br&gt;
+&lt;span&gt;\{!Loop_through_Accounts.Type} ({!Loop_through_Accounts.Type}) EqualTo Customer - Channel&lt;/span&gt;&lt;br&gt;
+&lt;span&gt;All conditions must be true (and)&lt;/span&gt;&lt;br&gt;
+&lt;br/&gt;
+&lt;span&gt;Skipped this outcome because its conditions weren&apos;t met: Customer_Direct&lt;/span&gt;&lt;br&gt;
+&lt;span&gt;Outcome conditions: &lt;/span&gt;&lt;br&gt;
+&lt;span&gt;\{!Loop_through_Accounts.Type} ({!Loop_through_Accounts.Type}) EqualTo Customer - Direct&lt;/span&gt;&lt;br&gt;
+&lt;span&gt;All conditions must be true (and)&lt;/span&gt;&lt;br&gt;
+&lt;br/&gt;
+&lt;span&gt;Skipped this outcome because its conditions weren&apos;t met: Technology_Partner&lt;/span&gt;&lt;br&gt;
+&lt;span&gt;Outcome conditions: &lt;/span&gt;&lt;br&gt;
+&lt;span&gt;\{!Loop_through_Accounts.Type} ({!Loop_through_Accounts.Type}) EqualTo Technology Partner&lt;/span&gt;&lt;br&gt;
+&lt;span&gt;All conditions must be true (and)&lt;/span&gt;&lt;br&gt;
+&lt;br/&gt;
+&lt;span&gt;Outcome executed: Prospect&lt;/span&gt;&lt;br&gt;
+&lt;span&gt;Outcome conditions: &lt;/span&gt;&lt;br&gt;
+&lt;span&gt;\{!Loop_through_Accounts.Type} ({!Loop_through_Accounts.Type}) EqualTo Prospect&lt;/span&gt;&lt;br&gt;
+
+&lt;span&gt;All conditions must be true (and)&lt;/span&gt;&lt;br&gt;
+&lt;/p&gt;
+&lt;p&gt;
+&lt;span style=&quot;font-weight:bold;&quot;&gt;(APEX): &lt;/span&gt;h_1a34eaba7eeafd9b7afc04e40ebf0a11_PostPreLog&lt;br&gt;
+&lt;span style=&quot;font-weight:bold;&quot;&gt;Inputs:&lt;/span&gt;&lt;br&gt;
+
+&lt;span style=&quot;font-weight:bold;&quot;&gt;Outputs:&lt;/span&gt;&lt;br&gt;
+
+&lt;/p&gt;</text>
+    </textTemplates>
+    <textTemplates>
+        <description>Pharos Flow Template for Log After: Start, Before: Get Accounts</description>
+        <name>h_4aaf7d26018a615e4866e9458b80a20a_Pharos_Template</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt;&lt;style&gt;
+span,a {
+ font-size: 16px;}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;p&gt;
+&lt;span&gt;&lt;img src=&quot;https://a.sfdcstatic.com/shared/images/c360-nav/mobile_logo.png&quot; alt=&quot;Salesforce logo&quot; width=&quot;40px&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-size:x-large;font-weight:bold&quot;&gt;An Error Occurred with Your &quot;Custom DY - Screen flow - Loop Promer&quot; Flow&lt;/span&gt;&lt;br&gt;&lt;br&gt;&lt;span&gt;You&apos;ve received this email because an error occurred while your &quot;Custom DY - Screen flow - Loop Promer&quot; flow was running. &lt;a &gt;Debug this flow in Flow Builder.&lt;/a&gt;&lt;br&gt;&lt;/span&gt;&lt;br&gt;
+&lt;span&gt;Error element debug (FlowActionCall).&lt;/span&gt;&lt;br&gt;&lt;span&gt;Debug: end&lt;/span&gt;&lt;br&gt;&lt;/span&gt;&lt;br&gt;&lt;br&gt;&lt;a style=&quot;background-color:#0176D3;border-radius:4px;color:white;padding:.5rem 1rem;text-decoration:none&quot;&gt;Open Flow&lt;/a&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;br&gt;&lt;span style=&quot;font-size:x-large;font-weight:bold&quot;&gt;Flow Error Details&lt;/span&gt;&lt;br&gt;&lt;br&gt;
+&lt;p&gt;
+&lt;span style=&quot;font-weight:bold;&quot;&gt;Flow Details&lt;/span&gt;&lt;br&gt;
+&lt;br&gt;&lt;span&gt;&lt;span style=&quot;font-weight:bold;&quot;&gt;Flow API Name: &lt;/span&gt;testnewmp__Custom_DY_Screen_flow_Loop_Promer&lt;/span&gt;&lt;br&gt;
+&lt;span&gt;&lt;span style=&quot;font-weight:bold;&quot;&gt;Type: &lt;/span&gt;Flow&lt;/span&gt;&lt;br&gt;
+&lt;span&gt;&lt;span style=&quot;font-weight:bold;&quot;&gt;Version: &lt;/span&gt;5&lt;/span&gt;&lt;br&gt;
+&lt;span&gt;&lt;span style=&quot;font-weight:bold;&quot;&gt;Status: &lt;/span&gt;Active&lt;/span&gt;&lt;br&gt;
+&lt;span&gt;&lt;span style=&quot;font-weight:bold;&quot;&gt;Org: &lt;/span&gt;{!$Organization.Id} ({!$Organization.Name})&lt;/span&gt;&lt;br&gt;
+&lt;/p&gt;
+&lt;br&gt;&lt;span style=&quot;font-weight:bold;&quot;&gt;Flow Interview Details&lt;/span&gt;&lt;br&gt;
+&lt;br&gt;&lt;span&gt;&lt;span style=&quot;font-weight:bold;&quot;&gt;Interview Label: &lt;/span&gt;Custom DY - Screen flow - Loop Promer&lt;/span&gt;&lt;br&gt;
+&lt;span&gt;&lt;span style=&quot;font-weight:bold;&quot;&gt;Interview GUID: &lt;/span&gt;{!$Flow.InterviewGuid}&lt;/span&gt;&lt;br&gt;
+&lt;span&gt;&lt;span style=&quot;font-weight:bold;&quot;&gt;Current User: &lt;/span&gt;{!$User.FirstName} {!$User.LastName}&lt;/span&gt;&lt;br&gt;
+&lt;span&gt;&lt;span style=&quot;font-weight:bold;&quot;&gt;Start time: &lt;/span&gt;{!$Flow.InterviewStartTime}&lt;/span&gt;&lt;br&gt;
+&lt;span&gt;&lt;span style=&quot;font-weight:bold;&quot;&gt;Duration: &lt;/span&gt;0&lt;/span&gt;&lt;br&gt;
+&lt;/p&gt;
+&lt;br&gt;&lt;span style=&quot;font-weight:bold;&quot;&gt;How the Interview Started&lt;/span&gt;&lt;br&gt;
+&lt;span&gt;{!$User.FirstName} {!$User.LastName} ({!$User.Id}) started the flow interview.&lt;/span&gt;&lt;br&gt;
+&lt;span&gt;API Version for Running the Flow: 63.0&lt;/span&gt;&lt;br&gt;
+&lt;/p&gt;
+&lt;p&gt;
+&lt;span style=&quot;font-weight:bold;&quot;&gt;(APEX): &lt;/span&gt;h_5c3ef1c6b6623970c82df3da26d9bd41_PostPreLog&lt;br&gt;
+&lt;span style=&quot;font-weight:bold;&quot;&gt;Inputs:&lt;/span&gt;&lt;br&gt;
+
+&lt;span style=&quot;font-weight:bold;&quot;&gt;Outputs:&lt;/span&gt;&lt;br&gt;
+
+&lt;/p&gt;</text>
+    </textTemplates>
+    <textTemplates>
+        <description>Pharos Flow Template for Log After: Has Team Member To Send Notification</description>
+        <name>h_5d6bd4bc62ca3dc3d7b6369a7320c5d5_Pharos_Template</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>&lt;p&gt;
+&lt;span style=&quot;font-weight:bold;&quot;&gt;DECISION: &lt;/span&gt;Has Team Member To Send Notification&lt;br&gt;
+&lt;span&gt;Skipped this outcome because its conditions weren&apos;t met: Has_Members&lt;/span&gt;&lt;br&gt;
+&lt;span&gt;Outcome conditions: &lt;/span&gt;&lt;br&gt;
+&lt;span&gt;\{!RecipientId2} ({!RecipientId2}) IsNull false&lt;/span&gt;&lt;br&gt;
+&lt;span&gt;All conditions must be true (and)&lt;/span&gt;&lt;br&gt;
+&lt;br/&gt;
+&lt;span&gt;Default outcome executed.&lt;/span&gt;&lt;br&gt;
+&lt;/p&gt;
+&lt;p&gt;
+&lt;span style=&quot;font-weight:bold;&quot;&gt;(APEX): &lt;/span&gt;h_f8402aef03a20ac1abef87178c197077_PostLog&lt;br&gt;
+&lt;span style=&quot;font-weight:bold;&quot;&gt;Inputs:&lt;/span&gt;&lt;br&gt;
+
+&lt;span style=&quot;font-weight:bold;&quot;&gt;Outputs:&lt;/span&gt;&lt;br&gt;
+
+&lt;/p&gt;</text>
+    </textTemplates>
+    <textTemplates>
+        <description>Pharos Flow Template for Log After: Technology Partner, Before: Increase the Count by 2</description>
+        <name>h_7ebb7da63a608c67f3dcd0e93cdcf318_Pharos_Template</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>&lt;p&gt;
+&lt;span style=&quot;font-weight:bold;&quot;&gt;DECISION: &lt;/span&gt;Account Type&lt;br&gt;
+&lt;span&gt;Skipped this outcome because its conditions weren&apos;t met: Customer_Channel&lt;/span&gt;&lt;br&gt;
+&lt;span&gt;Outcome conditions: &lt;/span&gt;&lt;br&gt;
+&lt;span&gt;\{!Loop_through_Accounts.Type} ({!Loop_through_Accounts.Type}) EqualTo Customer - Channel&lt;/span&gt;&lt;br&gt;
+&lt;span&gt;All conditions must be true (and)&lt;/span&gt;&lt;br&gt;
+&lt;br/&gt;
+&lt;span&gt;Skipped this outcome because its conditions weren&apos;t met: Customer_Direct&lt;/span&gt;&lt;br&gt;
+&lt;span&gt;Outcome conditions: &lt;/span&gt;&lt;br&gt;
+&lt;span&gt;\{!Loop_through_Accounts.Type} ({!Loop_through_Accounts.Type}) EqualTo Customer - Direct&lt;/span&gt;&lt;br&gt;
+&lt;span&gt;All conditions must be true (and)&lt;/span&gt;&lt;br&gt;
+&lt;br/&gt;
+&lt;span&gt;Skipped this outcome because its conditions weren&apos;t met: Prospect&lt;/span&gt;&lt;br&gt;
+&lt;span&gt;Outcome conditions: &lt;/span&gt;&lt;br&gt;
+&lt;span&gt;\{!Loop_through_Accounts.Type} ({!Loop_through_Accounts.Type}) EqualTo Prospect&lt;/span&gt;&lt;br&gt;
+&lt;span&gt;All conditions must be true (and)&lt;/span&gt;&lt;br&gt;
+&lt;br/&gt;
+&lt;span&gt;Outcome executed: Technology_Partner&lt;/span&gt;&lt;br&gt;
+&lt;span&gt;Outcome conditions: &lt;/span&gt;&lt;br&gt;
+&lt;span&gt;\{!Loop_through_Accounts.Type} ({!Loop_through_Accounts.Type}) EqualTo Technology Partner&lt;/span&gt;&lt;br&gt;
+
+&lt;span&gt;All conditions must be true (and)&lt;/span&gt;&lt;br&gt;
+&lt;/p&gt;
+&lt;p&gt;
+&lt;span style=&quot;font-weight:bold;&quot;&gt;(APEX): &lt;/span&gt;h_01b8d7b10f85897d48ce09062b16cfcf_PostPreLog&lt;br&gt;
+&lt;span style=&quot;font-weight:bold;&quot;&gt;Inputs:&lt;/span&gt;&lt;br&gt;
+
+&lt;span style=&quot;font-weight:bold;&quot;&gt;Outputs:&lt;/span&gt;&lt;br&gt;
+
+&lt;/p&gt;</text>
+    </textTemplates>
+    <textTemplates>
+        <description>Pharos Flow Template for Log After: Loop through Accounts, Before: Screen 3</description>
+        <name>h_8706ae6fdcbf1f12af7b15379454b78f_Pharos_Template</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>&lt;p&gt;
+&lt;span style=&quot;font-weight:bold;&quot;&gt;LOOP: &lt;/span&gt;Loop_through_Accounts&lt;br&gt;
+&lt;span&gt;End Loop.&lt;/span&gt;&lt;br&gt;
+&lt;/p&gt;
+&lt;p&gt;
+&lt;span style=&quot;font-weight:bold;&quot;&gt;(APEX): &lt;/span&gt;h_a2efccd3f79e0e9e119f2f4e91f0a2f8_PostPreLog&lt;br&gt;
+&lt;span style=&quot;font-weight:bold;&quot;&gt;Inputs:&lt;/span&gt;&lt;br&gt;
+
+&lt;span style=&quot;font-weight:bold;&quot;&gt;Outputs:&lt;/span&gt;&lt;br&gt;
+
+&lt;/p&gt;</text>
+    </textTemplates>
+    <textTemplates>
+        <description>Pharos Flow Template for Log After: Account Type, Before: Increase the Count by 1</description>
+        <name>h_90268d843435ee4948b1cb90f39ad92c_Pharos_Template</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>&lt;p&gt;
+&lt;span style=&quot;font-weight:bold;&quot;&gt;DECISION: &lt;/span&gt;Account Type&lt;br&gt;
+&lt;span&gt;Skipped this outcome because its conditions weren&apos;t met: Customer_Channel&lt;/span&gt;&lt;br&gt;
+&lt;span&gt;Outcome conditions: &lt;/span&gt;&lt;br&gt;
+&lt;span&gt;\{!Loop_through_Accounts.Type} ({!Loop_through_Accounts.Type}) EqualTo Customer - Channel&lt;/span&gt;&lt;br&gt;
+&lt;span&gt;All conditions must be true (and)&lt;/span&gt;&lt;br&gt;
+&lt;br/&gt;
+&lt;span&gt;Skipped this outcome because its conditions weren&apos;t met: Customer_Direct&lt;/span&gt;&lt;br&gt;
+&lt;span&gt;Outcome conditions: &lt;/span&gt;&lt;br&gt;
+&lt;span&gt;\{!Loop_through_Accounts.Type} ({!Loop_through_Accounts.Type}) EqualTo Customer - Direct&lt;/span&gt;&lt;br&gt;
+&lt;span&gt;All conditions must be true (and)&lt;/span&gt;&lt;br&gt;
+&lt;br/&gt;
+&lt;span&gt;Skipped this outcome because its conditions weren&apos;t met: Prospect&lt;/span&gt;&lt;br&gt;
+&lt;span&gt;Outcome conditions: &lt;/span&gt;&lt;br&gt;
+&lt;span&gt;\{!Loop_through_Accounts.Type} ({!Loop_through_Accounts.Type}) EqualTo Prospect&lt;/span&gt;&lt;br&gt;
+&lt;span&gt;All conditions must be true (and)&lt;/span&gt;&lt;br&gt;
+&lt;br/&gt;
+&lt;span&gt;Skipped this outcome because its conditions weren&apos;t met: Technology_Partner&lt;/span&gt;&lt;br&gt;
+&lt;span&gt;Outcome conditions: &lt;/span&gt;&lt;br&gt;
+&lt;span&gt;\{!Loop_through_Accounts.Type} ({!Loop_through_Accounts.Type}) EqualTo Technology Partner&lt;/span&gt;&lt;br&gt;
+&lt;span&gt;All conditions must be true (and)&lt;/span&gt;&lt;br&gt;
+&lt;br/&gt;
+&lt;span&gt;Default outcome executed.&lt;/span&gt;&lt;br&gt;
+&lt;/p&gt;
+&lt;p&gt;
+&lt;span style=&quot;font-weight:bold;&quot;&gt;(APEX): &lt;/span&gt;h_e21caa1c982a3084305b28aa8bca0618_PostPreLog&lt;br&gt;
+&lt;span style=&quot;font-weight:bold;&quot;&gt;Inputs:&lt;/span&gt;&lt;br&gt;
+
+&lt;span style=&quot;font-weight:bold;&quot;&gt;Outputs:&lt;/span&gt;&lt;br&gt;
+
+&lt;/p&gt;</text>
+    </textTemplates>
+    <textTemplates>
+        <description>Pharos Flow Template for Log After: Get Accounts, Before: Loop through Accounts</description>
+        <name>h_9b251d9286f4bd248f0df2cd16b1d9da_Pharos_Template</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>&lt;p&gt;
+&lt;span style=&quot;font-weight:bold;&quot;&gt;GET RECORDS: &lt;/span&gt;Get Accounts&lt;br&gt;
+&lt;span&gt;Find all Account records where:&lt;/span&gt;&lt;br&gt;
+&lt;span&gt;Type EqualTo Customer - Channel&lt;/span&gt;&lt;br&gt;
+&lt;span&gt;Store the values of these fields: &lt;/span&gt;&lt;br&gt;
+&lt;span style=&quot;font-weight:bold;&quot;&gt;Result&lt;/span&gt;&lt;br&gt;
+&lt;span&gt;\{!Get_Accounts} ({!Get_Accounts})&lt;/span&gt;&lt;br&gt;
+&lt;/p&gt;
+&lt;p&gt;
+&lt;span style=&quot;font-weight:bold;&quot;&gt;(APEX): &lt;/span&gt;h_f273d41278e39a52c01ba853cf99950f_PostPreLog&lt;br&gt;
+&lt;span style=&quot;font-weight:bold;&quot;&gt;Inputs:&lt;/span&gt;&lt;br&gt;
+
+&lt;span style=&quot;font-weight:bold;&quot;&gt;Outputs:&lt;/span&gt;&lt;br&gt;
+
+&lt;/p&gt;</text>
+    </textTemplates>
+    <textTemplates>
+        <description>Pharos Flow Template for Log After: Check If Users Are Connect..., Before: Has Team Member To Send Not...</description>
+        <name>h_9e4a26915ed0588b0fcbeef9f5e4b474_Pharos_Template</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>&lt;p&gt;
+&lt;span style=&quot;font-weight:bold;&quot;&gt;(APEX): &lt;/span&gt;Check_If_Users_Are_Connected_to_Slack&lt;br&gt;
+&lt;span style=&quot;font-weight:bold;&quot;&gt;Inputs:&lt;/span&gt;&lt;br&gt;
+&lt;span&gt;slackAppIdForToken = A03269G3DNE&lt;/span&gt;&lt;br&gt;
+&lt;span&gt;slackWorkspaceIdForToken = T07CM66NMRQ&lt;/span&gt;&lt;br&gt;
+&lt;span&gt;userIdsToCheck = RecipientId2&lt;/span&gt;
+&lt;span style=&quot;font-weight:bold;&quot;&gt;Outputs:&lt;/span&gt;&lt;br&gt;
+
+&lt;/p&gt;
+&lt;p&gt;
+&lt;span style=&quot;font-weight:bold;&quot;&gt;(APEX): &lt;/span&gt;h_dccb463114fe65582b42b5d811153813_PostPreLog&lt;br&gt;
+&lt;span style=&quot;font-weight:bold;&quot;&gt;Inputs:&lt;/span&gt;&lt;br&gt;
+
+&lt;span style=&quot;font-weight:bold;&quot;&gt;Outputs:&lt;/span&gt;&lt;br&gt;
+
+&lt;/p&gt;</text>
+    </textTemplates>
+    <textTemplates>
+        <description>Pharos Flow Template for Log After: Add Recipient, Before: Check If Users Are Connected to Slack</description>
+        <name>h_a57f5f8d69da6cc6578c5e16393ec034_Pharos_Template</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>&lt;p&gt;
+&lt;span style=&quot;font-weight:bold;&quot;&gt;ASSIGNMENT: &lt;/span&gt;Add Recipient&lt;br&gt;
+&lt;span&gt;RecipientId2 Add 005ak0000072HrxAAE&lt;/span&gt;&lt;br&gt;
+&lt;span style=&quot;font-weight:bold;&quot;&gt;Result&lt;/span&gt;&lt;br&gt;
+&lt;span&gt;RecipientId2 = {!RecipientId2}&lt;/span&gt;&lt;br&gt;
+&lt;/p&gt;
+&lt;p&gt;
+&lt;span style=&quot;font-weight:bold;&quot;&gt;(APEX): &lt;/span&gt;h_46d58bf9faf3721819dcfd40499b2f98_PostPreLog&lt;br&gt;
+&lt;span style=&quot;font-weight:bold;&quot;&gt;Inputs:&lt;/span&gt;&lt;br&gt;
+
+&lt;span style=&quot;font-weight:bold;&quot;&gt;Outputs:&lt;/span&gt;&lt;br&gt;
+
+&lt;/p&gt;</text>
+    </textTemplates>
+    <textTemplates>
+        <description>Pharos Flow Template for Log After: Send Slack notification, Before: Create Opp</description>
+        <name>h_a8b5c2701448a780273ec6d9df5972c8_Pharos_Template</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>&lt;p&gt;
+&lt;span style=&quot;font-weight:bold;&quot;&gt;(APEX): &lt;/span&gt;Send_Slack_notification&lt;br&gt;
+&lt;span style=&quot;font-weight:bold;&quot;&gt;Inputs:&lt;/span&gt;&lt;br&gt;
+&lt;span&gt;slackAppIdForToken = A03269G3DNE&lt;/span&gt;&lt;br&gt;
+&lt;span&gt;slackWorkspaceIdForToken = T07CM66NMRQ&lt;/span&gt;&lt;br&gt;
+&lt;span&gt;slackConversationId = C07D9VC9FGQ&lt;/span&gt;&lt;br&gt;
+&lt;span&gt;slackMessage = Test Slack Message&lt;/span&gt;
+&lt;span style=&quot;font-weight:bold;&quot;&gt;Outputs:&lt;/span&gt;&lt;br&gt;
+
+&lt;/p&gt;
+&lt;p&gt;
+&lt;span style=&quot;font-weight:bold;&quot;&gt;(APEX): &lt;/span&gt;h_42e6f4931ba59e62714614aeff240b1b_PostPreLog&lt;br&gt;
+&lt;span style=&quot;font-weight:bold;&quot;&gt;Inputs:&lt;/span&gt;&lt;br&gt;
+
+&lt;span style=&quot;font-weight:bold;&quot;&gt;Outputs:&lt;/span&gt;&lt;br&gt;
+
+&lt;/p&gt;</text>
+    </textTemplates>
+    <textTemplates>
+        <description>Pharos Flow Template for Log After: Loop through Accounts, Before: Account Type</description>
+        <name>h_d9b20ff726f0496d8658f17119a44419_Pharos_Template</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>&lt;p&gt;
+&lt;span style=&quot;font-weight:bold;&quot;&gt;LOOP: &lt;/span&gt;Loop_through_Accounts&lt;br&gt;
+&lt;span&gt;Loop Through: {!Get_Accounts}&lt;/span&gt;&lt;br&gt;
+&lt;span&gt;Current iteration item: {!Loop_through_Accounts}&lt;/span&gt;&lt;br&gt;
+&lt;/p&gt;
+&lt;p&gt;
+&lt;span style=&quot;font-weight:bold;&quot;&gt;(APEX): &lt;/span&gt;h_969e436209655dc8c143f060da0c724c_PostPreLog&lt;br&gt;
+&lt;span style=&quot;font-weight:bold;&quot;&gt;Inputs:&lt;/span&gt;&lt;br&gt;
+
+&lt;span style=&quot;font-weight:bold;&quot;&gt;Outputs:&lt;/span&gt;&lt;br&gt;
+
+&lt;/p&gt;</text>
+    </textTemplates>
+    <textTemplates>
+        <description>Pharos Flow Template for Log After: Increase the Count by 3, Before: Screen 1</description>
+        <name>h_d9cd3d6153528845a7a58c838f0e8703_Pharos_Template</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>&lt;p&gt;
+&lt;span style=&quot;font-weight:bold;&quot;&gt;ASSIGNMENT: &lt;/span&gt;Increase the Count by 3&lt;br&gt;
+&lt;span&gt;Count Add 3.0&lt;/span&gt;&lt;br&gt;
+&lt;span style=&quot;font-weight:bold;&quot;&gt;Result&lt;/span&gt;&lt;br&gt;
+&lt;span&gt;Count = {!Count}&lt;/span&gt;&lt;br&gt;
+&lt;/p&gt;
+&lt;p&gt;
+&lt;span style=&quot;font-weight:bold;&quot;&gt;(APEX): &lt;/span&gt;h_bc1736d3b27edaadc84bd6fea6f90961_PostPreLog&lt;br&gt;
+&lt;span style=&quot;font-weight:bold;&quot;&gt;Inputs:&lt;/span&gt;&lt;br&gt;
+
+&lt;span style=&quot;font-weight:bold;&quot;&gt;Outputs:&lt;/span&gt;&lt;br&gt;
+
+&lt;/p&gt;</text>
+    </textTemplates>
+    <textTemplates>
+        <description>Pharos Flow Template for Log After: Increase the Count by 4, Before: Screen 1</description>
+        <name>h_e3c0a41e66daa825651c283cca8e6596_Pharos_Template</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>&lt;p&gt;
+&lt;span style=&quot;font-weight:bold;&quot;&gt;ASSIGNMENT: &lt;/span&gt;Increase the Count by 4&lt;br&gt;
+&lt;span&gt;Count Add 4.0&lt;/span&gt;&lt;br&gt;
+&lt;span style=&quot;font-weight:bold;&quot;&gt;Result&lt;/span&gt;&lt;br&gt;
+&lt;span&gt;Count = {!Count}&lt;/span&gt;&lt;br&gt;
+&lt;/p&gt;
+&lt;p&gt;
+&lt;span style=&quot;font-weight:bold;&quot;&gt;(APEX): &lt;/span&gt;h_77d9dedd2747530a200c22b870405ff0_PostPreLog&lt;br&gt;
+&lt;span style=&quot;font-weight:bold;&quot;&gt;Inputs:&lt;/span&gt;&lt;br&gt;
+
+&lt;span style=&quot;font-weight:bold;&quot;&gt;Outputs:&lt;/span&gt;&lt;br&gt;
+
+&lt;/p&gt;</text>
+    </textTemplates>
+    <textTemplates>
+        <description>Pharos Flow Template for Log After: Increase the Count by 2, Before: Screen 1</description>
+        <name>h_e56dd2df149af85ab23d4dba3c250c76_Pharos_Template</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>&lt;p&gt;
+&lt;span style=&quot;font-weight:bold;&quot;&gt;ASSIGNMENT: &lt;/span&gt;Increase the Count by 2&lt;br&gt;
+&lt;span&gt;Count Add 2.0&lt;/span&gt;&lt;br&gt;
+&lt;span style=&quot;font-weight:bold;&quot;&gt;Result&lt;/span&gt;&lt;br&gt;
+&lt;span&gt;Count = {!Count}&lt;/span&gt;&lt;br&gt;
+&lt;/p&gt;
+&lt;p&gt;
+&lt;span style=&quot;font-weight:bold;&quot;&gt;(APEX): &lt;/span&gt;h_df0ee78a5ac4b591530877ac9c14ac13_PostPreLog&lt;br&gt;
+&lt;span style=&quot;font-weight:bold;&quot;&gt;Inputs:&lt;/span&gt;&lt;br&gt;
+
+&lt;span style=&quot;font-weight:bold;&quot;&gt;Outputs:&lt;/span&gt;&lt;br&gt;
+
+&lt;/p&gt;</text>
+    </textTemplates>
+    <textTemplates>
+        <description>Pharos Flow Template for Log After: Has Members, Before: Send Slack notification</description>
+        <name>h_eaaf11250cf4908eda5c4220d6c6c9ab_Pharos_Template</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>&lt;p&gt;
+&lt;span style=&quot;font-weight:bold;&quot;&gt;DECISION: &lt;/span&gt;Has Team Member To Send Notification&lt;br&gt;
+&lt;span&gt;Outcome executed: Has_Members&lt;/span&gt;&lt;br&gt;
+&lt;span&gt;Outcome conditions: &lt;/span&gt;&lt;br&gt;
+&lt;span&gt;\{!RecipientId2} ({!RecipientId2}) IsNull false&lt;/span&gt;&lt;br&gt;
+
+&lt;span&gt;All conditions must be true (and)&lt;/span&gt;&lt;br&gt;
+&lt;/p&gt;
+&lt;p&gt;
+&lt;span style=&quot;font-weight:bold;&quot;&gt;(APEX): &lt;/span&gt;h_b2accb3e7ebf13e11daa5f839a24dfdd_PostPreLog&lt;br&gt;
+&lt;span style=&quot;font-weight:bold;&quot;&gt;Inputs:&lt;/span&gt;&lt;br&gt;
+
+&lt;span style=&quot;font-weight:bold;&quot;&gt;Outputs:&lt;/span&gt;&lt;br&gt;
+
+&lt;/p&gt;</text>
+    </textTemplates>
+    <variables>
+        <name>Count</name>
+        <dataType>Number</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+        <scale>2</scale>
+    </variables>
+    <variables>
+        <description>Pharos Full Stacktrace</description>
+        <name>Pharos_Full_Stacktrace</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+        <value>
+            <stringValue> </stringValue>
+        </value>
+    </variables>
+    <variables>
+        <name>RecipientId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <variables>
+        <name>RecipientId2</name>
+        <dataType>String</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>
