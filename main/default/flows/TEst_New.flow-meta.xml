@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>63.0</apiVersion>
+    <interviewLabel>TEst New {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>TEst New</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordCreates>
+        <name>Test</name>
+        <label>Test</label>
+        <locationX>314</locationX>
+        <locationY>276</locationY>
+        <connector>
+            <targetReference>Test4</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>Name</field>
+        </inputAssignments>
+        <object>Account</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordCreates>
+        <name>Test_2</name>
+        <label>Test 2</label>
+        <locationX>50</locationX>
+        <locationY>276</locationY>
+        <inputReference>$Record</inputReference>
+    </recordCreates>
+    <start>
+        <locationX>56</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Test_2</targetReference>
+        </connector>
+        <object>Account</object>
+        <recordTriggerType>Create</recordTriggerType>
+        <scheduledPaths>
+            <name>Test_3</name>
+            <connector>
+                <targetReference>Test</targetReference>
+            </connector>
+            <label>Test 3</label>
+            <offsetNumber>1</offsetNumber>
+            <offsetUnit>Months</offsetUnit>
+            <recordField>CreatedDate</recordField>
+            <timeSource>RecordField</timeSource>
+        </scheduledPaths>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Draft</status>
+    <subflows>
+        <name>Test4</name>
+        <label>Test4</label>
+        <locationX>314</locationX>
+        <locationY>384</locationY>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </subflows>
+</Flow>

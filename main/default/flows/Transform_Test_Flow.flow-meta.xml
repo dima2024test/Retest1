@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <description>Description TEST</description>
+        <name>Test_Action</name>
+        <label>Test Action</label>
+        <locationX>418</locationX>
+        <locationY>600</locationY>
+        <actionName>NewAccount</actionName>
+        <actionType>quickAction</actionType>
+        <connector>
+            <targetReference>Test_Update</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>contextId</name>
+            <value>
+                <stringValue>234erwesdfdsf</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>Name</name>
+            <value>
+                <stringValue>Test Account</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>Type</name>
+            <value>
+                <stringValue>Prospect</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>Phone</name>
+            <value>
+                <stringValue>1234324</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>Website</name>
+            <value>
+                <stringValue>www.website.tt</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>Industry</name>
+            <value>
+                <stringValue>Industry</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <apiVersion>61.0</apiVersion>
+    <assignments>
+        <description>Description TEST 1</description>
+        <name>Test_Assignment</name>
+        <label>Test Assignment</label>
+        <locationX>418</locationX>
+        <locationY>276</locationY>
+        <assignmentItems>
+            <assignToReference>AccData</assignToReference>
+            <operator>Assign</operator>
+        </assignmentItems>
+        <connector>
+            <targetReference>Test_Transform</targetReference>
+        </connector>
+    </assignments>
+    <collectionProcessors>
+        <description>Description TEst 9</description>
+        <name>Collection_Filter_test</name>
+        <elementSubtype>FilterCollectionProcessor</elementSubtype>
+        <label>Collection Filter test</label>
+        <locationX>286</locationX>
+        <locationY>1356</locationY>
+        <assignNextValueToReference>currentItem_Collection_Filter_test</assignNextValueToReference>
+        <collectionProcessorType>FilterCollectionProcessor</collectionProcessorType>
+        <collectionReference>TEsteeee</collectionReference>
+        <conditionLogic>and</conditionLogic>
+        <conditions>
+            <leftValueReference>currentItem_Collection_Filter_test.BillingCity</leftValueReference>
+            <operator>IsNull</operator>
+            <rightValue>
+                <booleanValue>false</booleanValue>
+            </rightValue>
+        </conditions>
+        <connector>
+            <targetReference>Loop_test</targetReference>
+        </connector>
+    </collectionProcessors>
+    <collectionProcessors>
+        <description>Description TEst 8</description>
+        <name>Collection_sort</name>
+        <elementSubtype>SortCollectionProcessor</elementSubtype>
+        <label>Collection sort</label>
+        <locationX>286</locationX>
+        <locationY>1248</locationY>
+        <collectionProcessorType>SortCollectionProcessor</collectionProcessorType>
+        <collectionReference>TEsteeee</collectionReference>
+        <connector>
+            <targetReference>Collection_Filter_test</targetReference>
+        </connector>
+        <sortOptions>
+            <doesPutEmptyStringAndNullFirst>false</doesPutEmptyStringAndNullFirst>
+            <sortField>BillingCity</sortField>
+            <sortOrder>Asc</sortOrder>
+        </sortOptions>
+    </collectionProcessors>
+    <decisions>
+        <description>Description TEst 7</description>
+        <name>Decision</name>
+        <label>Decision</label>
+        <locationX>418</locationX>
+        <locationY>1032</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Outcome_1_of_Decision</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Delete_test</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_Accounts</targetReference>
+            </connector>
+            <label>Outcome 1 of Decision</label>
+        </rules>
+    </decisions>
+    <interviewLabel>Transform Test Flow {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Transform Test Flow</label>
+    <loops>
+        <description>Description TEst 10</description>
+        <name>Loop_test</name>
+        <label>Loop test</label>
+        <locationX>286</locationX>
+        <locationY>1464</locationY>
+        <collectionReference>Collection_Filter_test</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <noMoreValuesConnector>
+            <targetReference>Description</targetReference>
+        </noMoreValuesConnector>
+    </loops>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordCreates>
+        <description>Description TEst 3</description>
+        <name>Create_Opp</name>
+        <label>Create Opp</label>
+        <locationX>418</locationX>
+        <locationY>492</locationY>
+        <connector>
+            <targetReference>Test_Action</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>CloseDate</field>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Name</field>
+        </inputAssignments>
+        <inputAssignments>
+            <field>StageName</field>
+        </inputAssignments>
+        <object>Opportunity</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordDeletes>
+        <description>Description TEst 6</description>
+        <name>Delete_test</name>
+        <label>Delete test</label>
+        <locationX>418</locationX>
+        <locationY>924</locationY>
+        <connector>
+            <targetReference>Decision</targetReference>
+        </connector>
+        <inputReference>Get_Records</inputReference>
+    </recordDeletes>
+    <recordLookups>
+        <name>Get_Accounts</name>
+        <label>Get Accounts</label>
+        <locationX>286</locationX>
+        <locationY>1140</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Collection_sort</targetReference>
+        </connector>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Account</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <description>Description TEst 5</description>
+        <name>Get_Records</name>
+        <label>Get Records</label>
+        <locationX>418</locationX>
+        <locationY>816</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Delete_test</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Description</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Description TEst 2</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Opportunity</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordUpdates>
+        <description>Description Test 14</description>
+        <name>Description</name>
+        <label>Update Records 222</label>
+        <locationX>286</locationX>
+        <locationY>1656</locationY>
+        <inputAssignments>
+            <field>BillingCountry</field>
+            <value>
+                <stringValue>Test</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record.Owner.Account</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <description>Description Test 4</description>
+        <name>Test_Update</name>
+        <label>Test Update</label>
+        <locationX>418</locationX>
+        <locationY>708</locationY>
+        <connector>
+            <targetReference>Get_Records</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>AccountNumber</field>
+            <value>
+                <stringValue>111111</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <object>Account</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <scheduledPaths>
+            <name>Test</name>
+            <connector>
+                <targetReference>Test_Assignment</targetReference>
+            </connector>
+            <label>Test</label>
+            <offsetNumber>1</offsetNumber>
+            <offsetUnit>Minutes</offsetUnit>
+            <recordField>LastModifiedDate</recordField>
+            <timeSource>RecordField</timeSource>
+        </scheduledPaths>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Obsolete</status>
+    <variables>
+        <name>AccData</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+        <objectType>Account</objectType>
+    </variables>
+    <variables>
+        <name>currentItem_Collection_Filter_test</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Account</objectType>
+    </variables>
+    <variables>
+        <name>TEsteeee</name>
+        <dataType>SObject</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Account</objectType>
+    </variables>
+</Flow>
