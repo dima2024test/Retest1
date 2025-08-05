@@ -5,7 +5,7 @@
         <name>IAnalysis</name>
         <label>IAnalysis</label>
         <locationX>50</locationX>
-        <locationY>839</locationY>
+        <locationY>647</locationY>
         <actionName>pharos__Logger</actionName>
         <actionType>apex</actionType>
         <connector>
@@ -22,19 +22,19 @@
     <apiVersion>63.0</apiVersion>
     <assignments>
         <description>Test D3</description>
-        <name>Assignment1</name>
-        <label>Assignment1</label>
-        <locationX>270</locationX>
-        <locationY>539</locationY>
+        <name>Copy_1_of_Assignment1</name>
+        <label>Copy 1 of Assignment1</label>
+        <locationX>182</locationX>
+        <locationY>431</locationY>
         <assignmentItems>
             <assignToReference>GetIds</assignToReference>
             <operator>Add</operator>
             <value>
-                <elementReference>Iterate_issues.Id</elementReference>
+                <elementReference>Get_Issues.Id</elementReference>
             </value>
         </assignmentItems>
         <connector>
-            <targetReference>Iterate_issues</targetReference>
+            <targetReference>With_ids</targetReference>
         </connector>
     </assignments>
     <decisions>
@@ -42,7 +42,7 @@
         <name>With_ids</name>
         <label>With ids?</label>
         <locationX>182</locationX>
-        <locationY>731</locationY>
+        <locationY>539</locationY>
         <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
         <rules>
             <name>With_Ids1</name>
@@ -62,21 +62,6 @@
     </decisions>
     <interviewLabel>DY IAnalysis {!$Flow.CurrentDateTime}</interviewLabel>
     <label>DY IAnalysis</label>
-    <loops>
-        <description>Test D2</description>
-        <name>Iterate_issues</name>
-        <label>Iterate issues</label>
-        <locationX>182</locationX>
-        <locationY>431</locationY>
-        <collectionReference>Get_Issues</collectionReference>
-        <iterationOrder>Asc</iterationOrder>
-        <nextValueConnector>
-            <targetReference>Assignment1</targetReference>
-        </nextValueConnector>
-        <noMoreValuesConnector>
-            <targetReference>With_ids</targetReference>
-        </noMoreValuesConnector>
-    </loops>
     <processMetadataValues>
         <name>BuilderType</name>
         <value>
@@ -100,7 +85,7 @@
         <name>Create_Opp</name>
         <label>Create Opp</label>
         <locationX>50</locationX>
-        <locationY>947</locationY>
+        <locationY>755</locationY>
         <inputAssignments>
             <field>CloseDate</field>
         </inputAssignments>
@@ -121,7 +106,7 @@
         <locationY>323</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
-            <targetReference>Iterate_issues</targetReference>
+            <targetReference>Copy_1_of_Assignment1</targetReference>
         </connector>
         <filterLogic>and</filterLogic>
         <filters>
@@ -131,7 +116,7 @@
                 <stringValue>Not Started</stringValue>
             </value>
         </filters>
-        <getFirstRecordOnly>false</getFirstRecordOnly>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
         <object>pharos__Issue__c</object>
         <storeOutputAutomatically>true</storeOutputAutomatically>
     </recordLookups>
@@ -145,7 +130,7 @@
         <recordTriggerType>Update</recordTriggerType>
         <triggerType>RecordAfterSave</triggerType>
     </start>
-    <status>Active</status>
+    <status>Obsolete</status>
     <variables>
         <name>GetIds</name>
         <dataType>String</dataType>
