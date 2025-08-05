@@ -50,7 +50,7 @@
             <targetReference>Create_Opportunity</targetReference>
         </connector>
     </start>
-    <status>Obsolete</status>
+    <status>Active</status>
     <variables>
         <name>testvar</name>
         <dataType>SObject</dataType>
