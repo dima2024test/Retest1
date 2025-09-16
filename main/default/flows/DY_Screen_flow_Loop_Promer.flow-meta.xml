@@ -277,7 +277,7 @@
             <targetReference>Get_Accounts</targetReference>
         </connector>
     </start>
-    <status>Obsolete</status>
+    <status>Active</status>
     <variables>
         <name>Count</name>
         <dataType>Number</dataType>
